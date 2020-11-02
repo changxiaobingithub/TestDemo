@@ -1,0 +1,22 @@
+{
+  "name": "TestDemo",
+  "version": "0.1.0",
+  "summary": "A short description of TestDemo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/changxiaobingithub/TestDemo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "changxiaobingithub": "changxiaobinmail@163.com"
+  },
+  "source": {
+    "git": "https://github.com/changxiaobingithub/TestDemo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TestDemo/Classes/**/*"
+}

@@ -40,8 +40,8 @@
 		0063017EAE51A3C5E5E1C18D /* Pods-TestDemo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TestDemo_Tests/Pods-TestDemo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		10C58D8148B0E43BE6F82B5A /* Pods-TestDemo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo_Tests.release.xcconfig"; path = "Target Support Files/Pods-TestDemo_Tests/Pods-TestDemo_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		12DA54F220DD4D03856774BE /* Pods_TestDemo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A4975D96B7C5F3220411C3D /* TestDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TestDemo.podspec; path = ../TestDemo.podspec; sourceTree = "<group>"; };
-		3A4DF5E4D98D8F12AA51FE85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2A4975D96B7C5F3220411C3D /* TestDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestDemo.podspec; path = ../TestDemo.podspec; sourceTree = "<group>"; };
+		3A4DF5E4D98D8F12AA51FE85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TestDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E412ED9BCB29EA56B1DC8ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8E412ED9BCB29EA56B1DC8ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C8A403C1BBB1E024A8D26C1C /* Pods-TestDemo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo_Example.debug.xcconfig"; path = "Target Support Files/Pods-TestDemo_Example/Pods-TestDemo_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DE15279013261C92CA8CAFFB /* Pods_TestDemo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A667D1A625027A1BCCF3CE /* Pods-TestDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo_Example.release.xcconfig"; path = "Target Support Files/Pods-TestDemo_Example/Pods-TestDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 				0063017EAE51A3C5E5E1C18D /* Pods-TestDemo_Tests.debug.xcconfig */,
 				10C58D8148B0E43BE6F82B5A /* Pods-TestDemo_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = changxiaobingithub;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = GUH7LJ5J5Z;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -519,11 +522,12 @@
 			baseConfigurationReference = C8A403C1BBB1E024A8D26C1C /* Pods-TestDemo_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GUH7LJ5J5Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestDemo/TestDemo-Prefix.pch";
 				INFOPLIST_FILE = "TestDemo/TestDemo-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hikvision.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
@@ -535,11 +539,12 @@
 			baseConfigurationReference = E8A667D1A625027A1BCCF3CE /* Pods-TestDemo_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GUH7LJ5J5Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestDemo/TestDemo-Prefix.pch";
 				INFOPLIST_FILE = "TestDemo/TestDemo-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hikvision.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
